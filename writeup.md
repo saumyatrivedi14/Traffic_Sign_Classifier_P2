@@ -19,7 +19,7 @@ The project uses the DAVE-2 (https://devblogs.nvidia.com/deep-learning-self-driv
 
 [image1]: ./Report_Pics/Dataset1.JPG "Visualization"
 [image2]: ./Report_Pics/Dataset2.JPG
-[image3]: ./examples/random_noise.jpg "Random Noise"
+[image3]: ./Report_Pics/Normalization.JPG "Normalization"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
@@ -49,13 +49,11 @@ Here is an exploratory visualization of the data set. The first image shows a ra
 
 ### Design and Test a Model Architecture
 
-#### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
+As a first step, I decided to normalize the images in the dataset and fit teach pixel value in the range of 0-1 (because plt.imshow takes RGB values in the range of 0-1) to reduce the spread of data and the overall optimization duration (as the data is well conditioned). I tried grayscaling the images but that didn't improve the accuracy of the Network and it worked pretty well without it.
 
-As a first step, I decided to convert the images to grayscale because ...
+Here is an example of a traffic sign image before and after Normalization.
 
-Here is an example of a traffic sign image before and after grayscaling.
-
-![alt text][image2]
+![alt text][image3]
 
 As a last step, I normalized the image data because ...
 

@@ -40,7 +40,7 @@ I used the numpy and matplotlib libraries to calculate summary statistics and vi
 * The shape of a traffic sign image is (32,32,3)
 * The number of unique classes/labels in the data set is 43
 
-#### 2. Include an exploratory visualization of the dataset.
+#### Visualization of the dataset.
 
 Here is an exploratory visualization of the data set. The first image shows a random traffic sign pic selected from the dataset with the class index (class index and their descriptions of the traffic sign are provided in signnames.csv file in the repository). There are three bar charts shown below which gives the data distribution across all 43 class for each Training, Validation and Test set.
 
@@ -49,41 +49,40 @@ Here is an exploratory visualization of the data set. The first image shows a ra
 
 ### Design and Test a Model Architecture
 
+### 1. Pre-Processing of Dataset
+
 As a first step, I decided to normalize the images in the dataset and fit teach pixel value in the range of 0-1 (because plt.imshow takes RGB values in the range of 0-1) to reduce the spread of data and the overall optimization duration (as the data is well conditioned). I tried grayscaling the images but that didn't improve the accuracy of the Network and it worked pretty well without it.
 
 Here is an example of a traffic sign image before and after Normalization.
 
 ![alt text][image3]
 
-As a last step, I normalized the image data because ...
 
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
-
-
-#### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+#### 2. Model Architecture - Similar to DAVE-2 (Developed by NVIDIA)
 
 My final model consisted of the following layers:
 
-| Layer         		|     Description	        					| 
+| Layer         		      |     Description	        					                 | 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
- 
+| Input         		      | 32x32x3 RGB image   							                   | 
+| Convolution 5x5     	 | 1x1 stride, valid padding, outputs 28x28x6 	  |
+| RELU					             |												                                   |
+| Convolution 5x5	      | 1x1 stride, valid padding, outputs 24x24x16			|
+| RELU					             |												                                   |
+| Convolution 5x5	      | 2x2 stride, valid padding, outputs 10x10x36			|
+| RELU					             |												                                   |
+| Convolution 3x3	      | 2x2 stride, valid padding, outputs 4x4x48  			|
+| RELU					             |												                                   |
+| Convolution 3x3	      | 2x2 stride, valid padding, outputs 1x1x64		  	|
+| RELU					             |												                                   |
+| Flatten					          |	outputs 64	                                   |
+| Fully connected		     | outputs 120                          									|
+| RELU   				           |                                      									|
+|	Dropout               |	Keep Probability of 75%            											|
+| Fully connected		     | outputs 84                          									 |
+| RELU   				           |                                      									|
+|	Dropout               |	Keep Probability of 75%            											|
+| Fully connected		     | outputs 43                          									 |
 
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.

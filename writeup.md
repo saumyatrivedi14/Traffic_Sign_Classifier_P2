@@ -3,7 +3,7 @@
 ---
 **Introduction**
 
-The project uses the DAVE-2 Deep Learning Model architecture in training a Convolutional Neural Network to classify 43 different German Traffic Signs using TensorFlow. In total this CNN uses 9 layers including one layer of data pre-processing method (normalization), followed by 5 convolutional layers and 3 fully-connected layers augumented by regularization technique (Dropout). In addition to the given validation data and test data, the trained network is also tested on 8 randomly chosen images from the Web.
+The project uses the DAVE-2 (https://devblogs.nvidia.com/deep-learning-self-driving-cars/) Deep Learning Model architecture in training a Convolutional Neural Network to classify 43 different German Traffic Signs using TensorFlow. In total this CNN uses 9 layers including one layer of data pre-processing method (normalization), followed by 5 convolutional layers and 3 fully-connected layers augumented by regularization technique (Dropout). In addition to the given validation data and test data, the trained network is also tested on 8 randomly chosen images from the Web.
 
 **Goals of the Project**
 
@@ -17,8 +17,8 @@ The project uses the DAVE-2 Deep Learning Model architecture in training a Convo
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
+[image1]: ./Report_Pics/Dataset1 "Visualization"
+[image2]: ./Report_Pics/Dataset2
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"
@@ -32,22 +32,20 @@ The project uses the DAVE-2 Deep Learning Model architecture in training a Convo
 
 ### Data Set Summary & Exploration
 
-#### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
+I used the numpy and matplotlib libraries to calculate summary statistics and visualize the traffic signs data set:
 
-I used the pandas library to calculate summary statistics of the traffic
-signs data set:
-
-* The size of training set is ?
-* The size of the validation set is ?
-* The size of test set is ?
-* The shape of a traffic sign image is ?
-* The number of unique classes/labels in the data set is ?
+* The size of training set is 34799 samples
+* The size of the validation set is 4410 samples
+* The size of test set is 12630 samples
+* The shape of a traffic sign image is (32,32,3)
+* The number of unique classes/labels in the data set is 43
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. The first image shows a random traffic sign pic selected from the dataset with the class index (class index and their descriptions of the traffic sign are provided in signnames.csv file in the repository). There are three bar charts shown below which gives the data distribution across all 43 class for each Training, Validation and Test set.
 
 ![alt text][image1]
+![alt text][image2]
 
 ### Design and Test a Model Architecture
 

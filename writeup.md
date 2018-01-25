@@ -1,11 +1,13 @@
 # **Traffic Sign Recognition** 
 
 ---
+**Introduction**
 
-**Build a Traffic Sign Recognition Project**
+The project uses the DAVE-2 Deep Learning Model architecture in training a Convolutional Neural Network to classify 43 different German Traffic Signs using TensorFlow. In total this CNN uses 9 layers including one layer of data pre-processing method (normalization), followed by 5 convolutional layers and 3 fully-connected layers augumented by regularization technique (Dropout). In addition to the given validation data and test data, the trained network is also tested on 8 randomly chosen images from the Web.
 
-The goals / steps of this project are the following:
-* Load the data set (see below for links to the project data set)
+**Goals of the Project**
+
+* Load the data set
 * Explore, summarize and visualize the data set
 * Design, train and test a model architecture
 * Use the model to make predictions on new images
@@ -24,15 +26,9 @@ The goals / steps of this project are the following:
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
-## Rubric Points
-### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
+
 
 ---
-### Writeup / README
-
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
-
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ### Data Set Summary & Exploration
 

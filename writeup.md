@@ -17,8 +17,8 @@ The project uses the DAVE-2 (https://devblogs.nvidia.com/deep-learning-self-driv
 
 [//]: # (Image References)
 
-[image1]: ./Report_Pics/Dataset1 "Visualization"
-[image2]: ./Report_Pics/Dataset2
+[image1]: ./Report_Pics/Dataset1.JPG "Visualization"
+[image2]: ./Report_Pics/Dataset2.JPG
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
 [image5]: ./examples/placeholder.png "Traffic Sign 2"

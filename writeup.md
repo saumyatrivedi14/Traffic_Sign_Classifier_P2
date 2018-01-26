@@ -95,9 +95,9 @@ To train the model, initially I used the LeNet-5 architecture which has Adam Opt
 So I thought of changing the arachitecture and making the netwrok more deeper by adding more layers, DAVE-2 CNN has been successfully implemented on vehicle, trained using three cameras (left, center, right), to drive using only single center camera. (https://devblogs.nvidia.com/deep-learning-self-driving-cars/). After reading the paper, I thought of using the network architecture with some modifications to the filter depth, with this latest change I achieved 94.6% validation accuracy.
 
 Final Model Results are as follows:
-Training Accuracy - 98.9%
-Validation Accuracy - 94.6%
-Test Accuracy - 91.9%
+* Training Accuracy - 98.9%
+* Validation Accuracy - 94.6%
+* Test Accuracy - 91.9%
 
 
 ### Test a Model on New Images
@@ -107,38 +107,103 @@ Here are eight German traffic signs that I found on the web:
 ![alt text][image4] ![alt text][image5] ![alt text][image6] ![alt text][image7]
 ![alt text][image8] ![alt text][image9] ![alt text][image10] ![alt text][image11]
 
+The model was able to correctly guess 7 of the 8 traffic signs, which gives an accuracy of 87.5%. This compares favorably to the accuracy on the test set of 91.9%
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
+| Image			            |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Priority Road (12) 		| Priority Road (12)								| 
+| Speed Limit (30 km/h) (1)    			| Speed Limit (30 km/h) (1)								|
+| Keep Right (38)					| Keep Right (38)							|
+| Right-of-way at the next intersection (11)	      		| Right-of-way at the next intersection (11)		 				|
+| General Caution (18)			| General Caution (18) 							|
+| Road Work (25)			| Wild Animals Crossing	(31)					|
+| Turn Left Ahead (34)			|Turn Left Ahead (34)  							|
+| Stop (14)			| Stop (14)	   							|
 
+'Road Work' sign was classified incorrectly as 'Wild Animals Crossing', rest all were classified correctly. I think it happened because the sign is kind of at an inclination and also reflection of sun might have also increased the pixel values which might have confused the model. 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The code for making predictions on my final model is located in the 23rd cell of the Ipython notebook.
 
-#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
-
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 1.00         			| Priority Road (12)   									| 
+| 0.00     				| Right-of-way at the next intersection (11)										|
+| 0.00					| Traffic signals				(26)							|
+| 0.00	      			| Keep right	(38)				 				|
+| 0.00				    | End of no passing    (41)  							|
 
+For the Second image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
 
-For the second image ... 
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00         			| Priority Road (12)   									| 
+| 0.00     				| Right-of-way at the next intersection (11)										|
+| 0.00					| Traffic signals				(26)							|
+| 0.00	      			| Keep right	(38)				 				|
+| 0.00				    | End of no passing    (41)  							|
 
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-#### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+For the Third image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00         			| Priority Road (12)   									| 
+| 0.00     				| Right-of-way at the next intersection (11)										|
+| 0.00					| Traffic signals				(26)							|
+| 0.00	      			| Keep right	(38)				 				|
+| 0.00				    | End of no passing    (41)  							|
+
+For the Fourth image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00         			| Priority Road (12)   									| 
+| 0.00     				| Right-of-way at the next intersection (11)										|
+| 0.00					| Traffic signals				(26)							|
+| 0.00	      			| Keep right	(38)				 				|
+| 0.00				    | End of no passing    (41)  							|
+
+For the Fifth image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00         			| Priority Road (12)   									| 
+| 0.00     				| Right-of-way at the next intersection (11)										|
+| 0.00					| Traffic signals				(26)							|
+| 0.00	      			| Keep right	(38)				 				|
+| 0.00				    | End of no passing    (41)  							|
+
+For the Sixth image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00         			| Priority Road (12)   									| 
+| 0.00     				| Right-of-way at the next intersection (11)										|
+| 0.00					| Traffic signals				(26)							|
+| 0.00	      			| Keep right	(38)				 				|
+| 0.00				    | End of no passing    (41)  							|
+
+For the Seventh image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00         			| Priority Road (12)   									| 
+| 0.00     				| Right-of-way at the next intersection (11)										|
+| 0.00					| Traffic signals				(26)							|
+| 0.00	      			| Keep right	(38)				 				|
+| 0.00				    | End of no passing    (41)  							|
+
+For the Eighth image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00         			| Priority Road (12)   									| 
+| 0.00     				| Right-of-way at the next intersection (11)										|
+| 0.00					| Traffic signals				(26)							|
+| 0.00	      			| Keep right	(38)				 				|
+| 0.00				    | End of no passing    (41)  							|
 
 

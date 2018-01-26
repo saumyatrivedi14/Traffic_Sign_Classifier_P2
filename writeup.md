@@ -136,7 +136,7 @@ For the first image, the model is relatively sure that this is a 'Priority Road'
 | 0.00	      			| Keep right (38)				 				|
 | 0.00				    | End of no passing (41)  							|
 
-For the Second image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
+For the Second image, the model is kind of unsure that this is a 'Speed limit (30km/h)' sign (probability of 0.36). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -146,7 +146,7 @@ For the Second image, the model is relatively sure that this is a 'Priority Road
 | 0.06	      			| Slippery road (23)				 				|
 | 0.06				    | No passing for vehicles over 3.5 metric tons (10)  							|
 
-For the Third image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
+For the Third image, the model is relatively sure that this is a 'Keep right' sign (probability of 1.0). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -156,7 +156,7 @@ For the Third image, the model is relatively sure that this is a 'Priority Road'
 | 0.00	      			| Speed limit (50km/h) (2)				 				|
 | 0.00				    | Speed limit (60km/h) (3)  							|
 
-For the Fourth image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
+For the Fourth image, the model is relatively sure that this is a 'Right-of-way at the next intersection' sign (probability of 1.0). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -166,7 +166,7 @@ For the Fourth image, the model is relatively sure that this is a 'Priority Road
 | 0.00	      			| Priority road	(12)				 				|
 | 0.00				    | Pedestrians (27)  							|
 
-For the Fifth image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
+For the Fifth image, the model is relatively sure that this is a 'General caution' sign (probability of 0.99). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -176,7 +176,7 @@ For the Fifth image, the model is relatively sure that this is a 'Priority Road'
 | 0.00	      			| Right-of-way at the next intersection (11)				 				|
 | 0.00				    | Speed limit (30km/h)    (1)  							|
 
-For the Sixth image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
+For the Sixth image, the model is wrong that this is a 'Wild animals crossing' sign (probability of 0.93) instead of 'Road Work' sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -186,7 +186,7 @@ For the Sixth image, the model is relatively sure that this is a 'Priority Road'
 | 0.00	      			| Road work	(25)				 				|
 | 0.00				    | Slippery road (23)  							|
 
-For the Seventh image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
+For the Seventh image, the model is relatively sure that this is a 'Turn left ahead' sign (probability of 1.0). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -196,7 +196,7 @@ For the Seventh image, the model is relatively sure that this is a 'Priority Roa
 | 0.00	      			| No entry	(17)				 				|
 | 0.00				    | Roundabout mandatory (40)  							|
 
-For the Eighth image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
+For the Eighth image, the model is relatively sure that this is a 'Stop' sign (probability of 0.99). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 

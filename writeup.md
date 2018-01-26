@@ -132,78 +132,78 @@ For the first image, the model is relatively sure that this is a 'Priority Road'
 |:---------------------:|:---------------------------------------------:| 
 | 1.00         			| Priority Road (12)   									| 
 | 0.00     				| Right-of-way at the next intersection (11)										|
-| 0.00					| Traffic signals				(26)							|
-| 0.00	      			| Keep right	(38)				 				|
-| 0.00				    | End of no passing    (41)  							|
+| 0.00					| Traffic signals	(26)							|
+| 0.00	      			| Keep right (38)				 				|
+| 0.00				    | End of no passing (41)  							|
 
 For the Second image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.00         			| Priority Road (12)   									| 
-| 0.00     				| Right-of-way at the next intersection (11)										|
-| 0.00					| Traffic signals				(26)							|
-| 0.00	      			| Keep right	(38)				 				|
-| 0.00				    | End of no passing    (41)  							|
+| 0.36         			| Speed limit (30km/h) (1)   									| 
+| 0.24     				| Road work (25)										|
+| 0.07					| Speed limit (60km/h) (3)							|
+| 0.06	      			| Slippery road (23)				 				|
+| 0.06				    | No passing for vehicles over 3.5 metric tons (10)  							|
 
 For the Third image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.00         			| Priority Road (12)   									| 
-| 0.00     				| Right-of-way at the next intersection (11)										|
-| 0.00					| Traffic signals				(26)							|
-| 0.00	      			| Keep right	(38)				 				|
-| 0.00				    | End of no passing    (41)  							|
+| 1.00         			| Keep right (38)   									| 
+| 0.00     				| Speed limit (20km/h) (0)										|
+| 0.00					| Speed limit (30km/h) (1)							|
+| 0.00	      			| Speed limit (50km/h) (2)				 				|
+| 0.00				    | Speed limit (60km/h) (3)  							|
 
 For the Fourth image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.00         			| Priority Road (12)   									| 
-| 0.00     				| Right-of-way at the next intersection (11)										|
-| 0.00					| Traffic signals				(26)							|
-| 0.00	      			| Keep right	(38)				 				|
-| 0.00				    | End of no passing    (41)  							|
+| 1.00         			| Right-of-way at the next intersection (11)   									| 
+| 0.00     				| Beware of ice/snow (30)										|
+| 0.00					| Traffic signals (26)							|
+| 0.00	      			| Priority road	(12)				 				|
+| 0.00				    | Pedestrians (27)  							|
 
 For the Fifth image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.00         			| Priority Road (12)   									| 
-| 0.00     				| Right-of-way at the next intersection (11)										|
-| 0.00					| Traffic signals				(26)							|
-| 0.00	      			| Keep right	(38)				 				|
-| 0.00				    | End of no passing    (41)  							|
+| 0.99         			| General caution (18)   									| 
+| 0.00     				| Pedestrians (27)										|
+| 0.00					| Traffic signals (26)							|
+| 0.00	      			| Right-of-way at the next intersection (11)				 				|
+| 0.00				    | Speed limit (30km/h)    (1)  							|
 
 For the Sixth image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.00         			| Priority Road (12)   									| 
-| 0.00     				| Right-of-way at the next intersection (11)										|
-| 0.00					| Traffic signals				(26)							|
-| 0.00	      			| Keep right	(38)				 				|
-| 0.00				    | End of no passing    (41)  							|
+| 0.93         			| Wild animals crossing (31)   									| 
+| 0.03     				| Double curve (21)										|
+| 0.01					| Speed limit (80km/h) (5)							|
+| 0.00	      			| Road work	(25)				 				|
+| 0.00				    | Slippery road (23)  							|
 
 For the Seventh image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.00         			| Priority Road (12)   									| 
-| 0.00     				| Right-of-way at the next intersection (11)										|
-| 0.00					| Traffic signals				(26)							|
-| 0.00	      			| Keep right	(38)				 				|
-| 0.00				    | End of no passing    (41)  							|
+| 1.00         			| Turn left ahead (34)   									| 
+| 0.00     				| Keep right (38)										|
+| 0.00					| Slippery road	(23)							|
+| 0.00	      			| No entry	(17)				 				|
+| 0.00				    | Roundabout mandatory (40)  							|
 
 For the Eighth image, the model is relatively sure that this is a 'Priority Road' sign (probability of 1.0). The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.00         			| Priority Road (12)   									| 
-| 0.00     				| Right-of-way at the next intersection (11)										|
-| 0.00					| Traffic signals				(26)							|
-| 0.00	      			| Keep right	(38)				 				|
-| 0.00				    | End of no passing    (41)  							|
+| 0.99         			| Stop (14)   									| 
+| 0.00     				| Road work (25)										|
+| 0.00					| Bumpy road (22)							|
+| 0.00	      			| Yield	(13)				 				|
+| 0.00				    | Speed limit (80km/h) (5)  							|
 
 

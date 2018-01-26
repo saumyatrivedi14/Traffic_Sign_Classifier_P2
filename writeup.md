@@ -20,11 +20,14 @@ The project uses the DAVE-2 (https://devblogs.nvidia.com/deep-learning-self-driv
 [image1]: ./Report_Pics/Dataset1.JPG "Visualization"
 [image2]: ./Report_Pics/Dataset2.JPG
 [image3]: ./Report_Pics/Normalization.JPG "Normalization"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image4]: ./New_Traffic_Signs/1.png "Traffic Sign 1"
+[image5]: ./New_Traffic_Signs/2.png "Traffic Sign 2"
+[image6]: ./New_Traffic_Signs/3.png "Traffic Sign 3"
+[image7]: ./New_Traffic_Signs/4.png "Traffic Sign 4"
+[image8]: ./New_Traffic_Signs/5.png "Traffic Sign 5"
+[image9]: ./New_Traffic_Signs/6.png "Traffic Sign 6"
+[image10]: ./New_Traffic_Signs/7.png "Traffic Sign 7"
+[image11]: ./New_Traffic_Signs/8.png "Traffic Sign 8"
 
 
 
@@ -89,26 +92,21 @@ My final model consisted of the following layers:
 
 To train the model, initially I used the LeNet-5 architecture which has Adam Optimizer but initial both training and validation accuracy came out pretty low which means the model was underfitting (approx. 78%), I tried increasing the epoch size from 10 and reduce the batch size from 128, also changed learn rate and keep probability during dropout. I also tried adding dropout, max_pooling, avg_pooling layers in between the convolution layer and fully connected layer, but the maximum vaidation accuracy I could achieve was 93.2% with training accuracy reaching 99.0%.
 
-So I thought of changing the arachitecture and making the netwrok more deeper by adding more layers, DAVE-2 CNN has been successfully implemented on vehicle, trained using three cameras (left, center, right), to drive using only single center camera. (https://devblogs.nvidia.com/deep-learning-self-driving-cars/). After reading the paper, I thought of using the network architecture with some modifications to the filter depth, with this latest change I achieved 94.5% validation accuracy.
+So I thought of changing the arachitecture and making the netwrok more deeper by adding more layers, DAVE-2 CNN has been successfully implemented on vehicle, trained using three cameras (left, center, right), to drive using only single center camera. (https://devblogs.nvidia.com/deep-learning-self-driving-cars/). After reading the paper, I thought of using the network architecture with some modifications to the filter depth, with this latest change I achieved 94.6% validation accuracy.
 
 Final Model Results are as follows:
-Training Accuracy
-Validation Accuracy - 
-Test Accuracy - 
+Training Accuracy - 98.9%
+Validation Accuracy - 94.6%
+Test Accuracy - 91.9%
 
 
 ### Test a Model on New Images
 
-#### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+Here are eight German traffic signs that I found on the web:
 
-Here are five German traffic signs that I found on the web:
+![alt text][image4] ![alt text][image5] ![alt text][image6] ![alt text][image7]
+![alt text][image8] ![alt text][image9] ![alt text][image10] ![alt text][image11]
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
-
-The first image might be difficult to classify because ...
-
-#### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
 
